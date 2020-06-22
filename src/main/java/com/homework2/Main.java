@@ -102,15 +102,15 @@ public class Main {
         System.out.println();
     }
 
-    public static void duplicateToZero(int[] zero) {
-        for (int i = 0; i < zero.length; i++) {
-            for (int j = i + 1; j < zero.length; j++) {
-                if (zero[i] == zero[j]) {
-                    zero[j] = 0;
+    public static void duplicateToZero(int[] zeroArray) {
+        for (int i = 0; i < zeroArray.length; i++) {
+            for (int j = i + 1; j < zeroArray.length; j++) {
+                if (zeroArray[i] == zeroArray[j]) {
+                    zeroArray[j] = 0;
                 }
             }
         }
-        printArray(zero);
+        printArray(zeroArray);
     }
 
     public static void printArray(int[] myArray) {
